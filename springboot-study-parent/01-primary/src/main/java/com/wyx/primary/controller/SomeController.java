@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class SomeController {
 
 	/**
-	 * http://localhost:8080/some
+	 * 访问：http://localhost:8888/primary/some
 	 */
 	@GetMapping("/some")
 	public String some() {
