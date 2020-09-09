@@ -11,5 +11,6 @@
     <modules>
         <module>01-primary</module>
         <module>03-actuator</module>
+        <module>multi-env-a</module>
     </modules>
 </project>

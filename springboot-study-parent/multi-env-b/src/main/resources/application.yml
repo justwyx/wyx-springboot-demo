@@ -1,0 +1,42 @@
+spring:
+  profiles:
+    active: test
+
+---
+spring:
+  profiles: dev
+
+server:
+  port: 8888
+
+# 自定义属性
+multi:
+  env: dev
+
+
+
+
+---
+spring:
+  profiles: test
+
+server:
+  port: 8888
+
+# 自定义属性
+multi:
+  env: test
+
+
+
+
+---
+spring:
+  profiles: prod
+
+server:
+  port: 8888
+
+# 自定义属性
+multi:
+  env: prod

@@ -18,4 +18,10 @@ public class SomeController {
 	public String some() {
 		return "hello spring boot world";
 	}
+
+	@GetMapping("/test/error")
+	public String testError() {
+		int i = 1 / 0;
+		return "hello spring boot world";
+	}
 }
