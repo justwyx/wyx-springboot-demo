@@ -1,0 +1,42 @@
+server:
+  # 修改内置Tomcat端口号
+  port: 8888
+  servlet:
+    # 指定部署到内置Tomcat中应用的根路径
+    context-path: /primary
+management:
+  server:
+    port: 9888
+    servlet:
+      context-path: /primary
+  endpoints:
+    web:
+      # 指定监控终端的基本路径，默认为actuatord
+      base-path: /actuator
+      exposure:
+        # 常用的监控终端 在百度搜索“springboot actuator”
+        # 开放所有监控终端，默认只开启了health和info监控终端
+        # 在yml中*号为关键字，需要将其使用双引号引起来"*"
+        include: '*' # 开放所有终端
+        # include: ['env', 'beans'] # 开放指定终端
+        exclude: ['env', 'beans'] # 关闭指定终端
+
+
+# 自定义info信息
+info:
+  company:
+    name: wyx
+    url: http://www.wyx.com
+    addr: shanghai
+  auth:
+    name: zhangsan
+    dep: develepment
+# 从POM.XML文件中读取相应值
+  project:
+    groupid: @project.groupId@
+    artifactId: @project.artifactId@
+    version: @project.version@
+    name: @project.name@
+
+
+
