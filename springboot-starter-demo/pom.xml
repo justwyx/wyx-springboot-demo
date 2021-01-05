@@ -13,6 +13,7 @@
 
     <modules>
         <module>wrap-spring-boot-starter</module>
+        <module>wrap-test-demo</module>
     </modules>
 
     <properties>
