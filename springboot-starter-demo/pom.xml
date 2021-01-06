@@ -13,7 +13,8 @@
 
     <modules>
         <module>wrap-spring-boot-starter</module>
-        <module>wrap-test-demo</module>
+        <module>analysis-spring-boot-starter</module>
+        <module>starter-test-demo</module>
     </modules>
 
     <properties>
