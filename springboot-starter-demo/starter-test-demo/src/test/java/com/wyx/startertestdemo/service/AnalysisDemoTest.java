@@ -19,7 +19,7 @@ public class AnalysisDemoTest {
 	@Test
 	public void testProcess() {
 		String STR = "3213dsfads北京清华大学1BOD1长春锅炉仪表,";
-		System.out.println("sentenceProcess: " + analysisService.searchProcess(STR));
+		System.out.println("searchProcess: " + analysisService.searchProcess(STR));
 	}
 
 }

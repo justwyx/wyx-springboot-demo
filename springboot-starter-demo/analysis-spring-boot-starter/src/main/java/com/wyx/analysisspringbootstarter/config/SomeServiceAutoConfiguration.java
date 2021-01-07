@@ -21,12 +21,6 @@ public class SomeServiceAutoConfiguration {
 
 	@Bean
 	public AnalysisService analysisService() {
-		System.out.println("AnalysisService 初始化。。。");
-		JiebaAnalysisServiceImpl jiebaAnalysisService = new JiebaAnalysisServiceImpl();
-		// 词典路径为Resource/dicts/jieba.dict
-		Path path = Paths.get(new File(getClass().getClassLoader().getResource("dicts/user.dict").getPath()).getAbsolutePath());
-		// 加载自定义的词典进词库
-		WordDictionary.getInstance().init(path);
-		return jiebaAnalysisService;
+		return new JiebaAnalysisServiceImpl();
 	}
 }
