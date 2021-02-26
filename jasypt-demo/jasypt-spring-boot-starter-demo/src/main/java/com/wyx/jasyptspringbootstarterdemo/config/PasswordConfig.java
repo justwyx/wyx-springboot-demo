@@ -12,6 +12,7 @@ import org.springframework.stereotype.Component;
 public class PasswordConfig {
 	private String username;
 	private String password;
+	private String productUrl;
 
 	public String getUsername() {
 		return username;
@@ -29,11 +30,20 @@ public class PasswordConfig {
 		this.password = password;
 	}
 
+	public String getProductUrl() {
+		return productUrl;
+	}
+
+	public void setProductUrl(String productUrl) {
+		this.productUrl = productUrl;
+	}
+
 	@Override
 	public String toString() {
 		return "PasswordConfig{" +
 				"username='" + username + '\'' +
 				", password='" + password + '\'' +
+				", productUrl='" + productUrl + '\'' +
 				'}';
 	}
 }

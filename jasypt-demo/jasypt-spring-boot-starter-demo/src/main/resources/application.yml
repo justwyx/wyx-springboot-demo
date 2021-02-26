@@ -2,6 +2,7 @@
 jasypt:
   encryptor:
     password: TBAeRf6nxwtrMySOnjICcA
-#wyx:
-#  username: ENC(y5o6gM1WYCig1rK8GShszA==)
-#  password: ENC(VraPpdpT1Ctu9glaDr9Yyg==)
+wyx:
+  username: ENC(y5o6gM1WYCig1rK8GShszA==)
+  password: ENC(VraPpdpT1Ctu9glaDr9Yyg==)
+  product-url: www.baidu.com
