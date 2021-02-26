@@ -12,5 +12,7 @@
         <module>springboot-study-parent</module>
         <!--自定义 Starter demo-->
         <module>springboot-starter-demo</module>
+        <!-- jasypt 加密-->
+        <module>jasypt-demo</module>
     </modules>
 </project>

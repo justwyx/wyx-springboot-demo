@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>wyx-springboot-demo</artifactId>
+        <groupId>com.wyx</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>jasypt-demo</artifactId>
+    <packaging>pom</packaging>
+    <description>
+        配置文件中存放着许多重要的东西，比如数据库账号密码什么的，需要对这些内容进行加密储存。
+        使用到的是jasypt
+        jasypt由于其使用的是PBEWithMD5AndDES加密方式，所以每次加密出来的结果都不一样，所以很适合对数据进行加密
+    </description>
+
+
+    <modules>
+        <module>jasypt-spring-boot-starter-demo</module>
+    </modules>
+
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+    </properties>
+
+</project>
